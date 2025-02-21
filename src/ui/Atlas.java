@@ -66,7 +66,7 @@ public class Atlas {
         cantidadNoches = escaner.nextInt();
 
         //condicional para definir el precio de noches teniendo en cuenta que debe ser por lo menos una y maximo 4
-        if (4>=cantidadNoches>=1){
+        if (cantidadNoches>=1){
             totalNoches = calcularNoches (cantidadNoches, PRECIO_NOCHES);
             System.out.println ("El total para " +cantidadNoches+ " noches es: $" + totalNoches);
         } else if(cantidadNoches<1){
@@ -92,8 +92,6 @@ public class Atlas {
 	public static void main(String[] args) {
 		Atlas mainApp = new Atlas();
 		mainApp.run();
-        Atlas mainApp = new Atlas();
-		mainApp.hotel();
 	}
 
     // Completar metodos para calcular salidas
